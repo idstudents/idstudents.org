@@ -1,0 +1,215 @@
+﻿/* Project: ISA
+ * By Jason Denizac - 2010-07-26
+ * This code (C) Idaho Student Association.
+ * All other use is unauthorized.
+ *
+ * 1. Base
+ * 1.1 Base classes
+ * 2. Layout
+ * 3. General Typography
+ * 4. Header
+ * 5. Footer
+ * 6. Page-specific 
+ * 6.1 Home
+ * 6.2 Page name, etc
+ */
+ 
+/* 1. Base */
+body{
+background: #273d59 url(../images/bg.png) repeat-x;
+font-family: 'trebuchet ms', trebuchet, sans-serif;
+color: #000;
+margin: 0;
+}
+#container{
+width: 850px;
+margin: 15px auto 30px;
+background: #fff url(../images/paper-bg.jpg) no-repeat -68px -15px;
+position: relative;
+}
+#paperbg{
+position: absolute;
+top: -15px;
+left: -68px;
+z-index: -1;
+background: url(../images/paper-bg.jpg) no-repeat;
+width: 436px; height: 425px;
+}
+#stripe{
+background: rgba(0,0,0,.18);
+width: 22px;
+position: absolute;
+top: 0;
+right: -11px;
+height: 100%;
+}
+a img{
+border: 0;
+}
+
+/* 1.1 Base classes */
+/* menu */
+.s-first{} /* first item in a list, for browsers without :first-child */
+.s-last{} /* last item in a list, for browsers without :last-child */
+
+/* misc */
+ul.s-listreset{ /* reset for specially formatted lists: nav, etc */margin: 0; padding: 0;}ul.s-listreset li{margin: 0; padding: 0;list-style: none;}
+.s-clearFix{ /* clear floats */ clear: both; visibility: hidden; height: 0;}
+.s-skipLink{ /* accessibility skip link */position: absolute; top: -9999em; float: left; height: 1px; width: 1px;}
+
+
+/* 2. Layout */
+
+/* columns classes, generic block classes, etc */
+#main{
+float: left;
+padding: 70px 0 0 50px;
+width: 450px;
+}
+
+
+/* 3. General Typography */
+#main h1{
+font-weight: normal;
+}
+#main h2{
+font-weight: normal;
+}
+#main h3{
+}
+#main h4{
+}
+#main h5{
+}
+#main h6{
+}
+
+#main a{
+}
+#main a:visited{
+}
+#main a:hover{
+}
+#main a:active{
+}
+
+#main p{
+}
+#main blockquote{
+}
+#main cite{
+}
+
+/* 4. Header */
+#header{
+float: right;
+width: 210px;
+padding: 20px 45px 20px 0;
+}
+#logo{
+display: block;
+text-indent: -9999px;
+text-align: left;
+background: url(../images/logo.png);
+width: 205px; height: 111px;
+}
+#globalNav {
+padding: 20px 0 60px;
+}
+#globalNav .nav ul{
+}
+#globalNav .nav li{
+}
+#globalNav a{
+font-size: 15px;
+color: #273d59;
+text-decoration: none;
+}
+#globalNav a:hover{
+color: #3372c1;
+}
+#globalNav a em{
+font-size: 12px;
+}
+
+#tagline{
+text-transform: lowercase;
+color: #747474;
+font-style: italic;
+font-size: 12px;
+}
+
+#twitter a{
+text-decoration: none;
+color: #273D59;
+}
+#tweet{
+color: #484848;
+font-size: 12px;
+}
+#tweet a:hover{
+color: #3372c1;
+}
+#tweet .meta{
+color: #484848;
+font-style: italic;
+}
+#social{
+padding: 20px 0 0;
+}
+
+/* 5. Footer */
+#footer{
+clear: both;
+background: url(../images/sharpener.jpg) top right no-repeat;
+min-height: 185px;
+}
+#fact{
+padding: 90px 0 20px 50px;
+width: 600px;
+color: #273d59;
+}
+#fact h2{
+margin: 0; padding: 0;
+font-weight: normal;
+font-style: italic;
+} 
+#fact p{
+margin: 0; padding: 0 0 0 20px;
+}
+#copyright{
+text-align: center;
+color: #707070;
+font-size: 12px;
+margin: 30px 0 0;
+}
+#copyright a{
+color: #707070;
+text-decoration: none;
+}
+#copyright a:hover{
+text-decoration: underline;
+}
+
+
+/* 6. Page-specific */
+/* 6.1 Home */
+#homeslide ul{
+list-style: none;
+margin: 0;
+padding: 0;
+}
+#homeslide li{
+display: none;
+list-style: none;
+margin: 0;
+padding: 0;
+}
+
+#homeslide li.active, #homeslide li:first-child{
+display: block;
+}
+
+/* 6.2 Page name, etc */
+
+/* EOF ./css/style.css */
